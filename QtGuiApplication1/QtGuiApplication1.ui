@@ -1,0 +1,3927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtGuiApplication1Class</class>
+ <widget class="QMainWindow" name="QtGuiApplication1Class">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1599</width>
+    <height>895</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>QtGuiApplication1</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0" rowspan="2">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-right-color:rgb(185, 185, 185);
+border-right-style : solid;
+border-right-width:1;
+</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>6</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QToolBox" name="toolBox">
+         <property name="styleSheet">
+          <string notr="true">toolBox#toolBox{font: 75 10pt &quot;微软雅黑&quot;;}</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="tabSpacing">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>656</height>
+           </rect>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <attribute name="label">
+           <string>彩色图像处理</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMaximumSize</enum>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="styleSheet">
+              <string notr="true">border-width:0;</string>
+             </property>
+             <property name="text">
+              <string>灰度图像</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>656</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>灰度图二值化</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>单阈值</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="text">
+              <string>双阈值</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string>大津算法</string>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>656</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>对比度调整</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>线性调整</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="text">
+              <string>分段线性调整</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="text">
+              <string>对数调整</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="text">
+              <string>指数调整</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="text">
+              <string>直方图均衡化</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>507</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>656</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>平滑滤波器</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="text">
+              <string>均值滤波器</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_13">
+             <property name="text">
+              <string>中值滤波器</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_14">
+             <property name="text">
+              <string>高斯滤波器</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_15">
+             <property name="text">
+              <string>自定义</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>656</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>边缘检测</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_19">
+             <property name="text">
+              <string>Sobel</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_20">
+             <property name="text">
+              <string>Laplace</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_21">
+             <property name="text">
+              <string>Canny</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>656</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>霍夫变换</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_26">
+             <property name="text">
+              <string>检测直线</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_27">
+             <property name="text">
+              <string>检测圆</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <spacer name="verticalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_7">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>656</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>二值形态学</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_28">
+             <property name="text">
+              <string>膨胀</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_29">
+             <property name="text">
+              <string>腐蚀</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_32">
+             <property name="text">
+              <string>开</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_33">
+             <property name="text">
+              <string>闭</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_31">
+             <property name="text">
+              <string>细化</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_30">
+             <property name="text">
+              <string>粗化</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_34">
+             <property name="text">
+              <string>距离变换</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_35">
+             <property name="text">
+              <string>骨架</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_36">
+             <property name="text">
+              <string>骨架重构</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_37">
+             <property name="text">
+              <string>形态学重构</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_8">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>656</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>灰度形态学</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_38">
+             <property name="text">
+              <string>膨胀</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_39">
+             <property name="text">
+              <string>腐蚀</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_40">
+             <property name="text">
+              <string>开</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_41">
+             <property name="text">
+              <string>闭</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_42">
+             <property name="text">
+              <string>分水岭</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_43">
+             <property name="text">
+              <string>重构</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>515</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2" rowspan="2">
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#widget_2{
+border-left-color:rgb(185, 185, 185);
+border-left-style : solid;
+border-left-width:1;
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <widget class="QTabWidget" name="tabWidget_2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="tab_8">
+          <property name="styleSheet">
+           <string notr="true">background-color : rgb(240, 240, 240)</string>
+          </property>
+          <attribute name="title">
+           <string>图层</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_7">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color : rgb(240, 240, 240)</string>
+          </property>
+          <attribute name="title">
+           <string>通道</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QRadioButton" name="radioButton_2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>RGB通道</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_R">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>R通道</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_G">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>G通道</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_B">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>B通道</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab">
+          <property name="styleSheet">
+           <string notr="true">background-color : rgb(240, 240, 240)</string>
+          </property>
+          <attribute name="title">
+           <string>插值算法</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="topMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButton">
+             <property name="text">
+              <string>最近邻插值</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="radioButton_3">
+             <property name="text">
+              <string>双线性插值</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="tab_6">
+          <property name="styleSheet">
+           <string notr="true">background-color : rgb(240, 240, 240)</string>
+          </property>
+          <attribute name="title">
+           <string>色彩</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="10" column="4" colspan="2">
+            <widget class="QPushButton" name="pushButton_25">
+             <property name="text">
+              <string>取消</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>色相（Hue）</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLabel" name="label_12">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>饱和度(Saturation)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QRadioButton" name="radioButton_6">
+             <property name="text">
+              <string>R</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QPushButton" name="pushButton_23">
+             <property name="text">
+              <string>绘制</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="5">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="6">
+            <widget class="QSlider" name="horizontalSlider_7">
+             <property name="minimum">
+              <number>-100</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1" colspan="3">
+            <widget class="QRadioButton" name="radioButton_9">
+             <property name="text">
+              <string>G</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="4">
+            <widget class="QRadioButton" name="radioButton_7">
+             <property name="text">
+              <string>B</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0" colspan="6">
+            <widget class="QLabel" name="Hist_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>256</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1" colspan="3">
+            <widget class="QPushButton" name="pushButton_24">
+             <property name="text">
+              <string>确定</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0" colspan="3">
+            <widget class="QSpinBox" name="spinBox_34">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="6">
+            <widget class="QSlider" name="horizontalSlider_8">
+             <property name="minimum">
+              <number>-100</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="4">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>明度（Value/Intensity）</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" colspan="2">
+            <widget class="QSpinBox" name="spinBox_32">
+             <property name="minimumSize">
+              <size>
+               <width>90</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="4" colspan="2">
+            <widget class="QSpinBox" name="spinBox_33">
+             <property name="minimumSize">
+              <size>
+               <width>90</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3" colspan="3">
+            <widget class="QSpinBox" name="spinBox_35">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2" colspan="2">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox">
+             <property name="minimumSize">
+              <size>
+               <width>56</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>56</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="minimum">
+              <double>-10.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>10.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="6">
+            <widget class="QSlider" name="horizontalSlider_9">
+             <property name="minimum">
+              <number>-180</number>
+             </property>
+             <property name="maximum">
+              <number>180</number>
+             </property>
+             <property name="singleStep">
+              <number>1</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Hitogram_tab">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color : rgb(240, 240, 240)</string>
+          </property>
+          <attribute name="title">
+           <string>灰度直方图</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="4" column="0" colspan="6">
+            <widget class="QSlider" name="horizontalSlider_2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777213</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="Hist">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>256</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QSpinBox" name="spinBox_2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>256</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QSlider" name="horizontalSlider">
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>256</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>100</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>100</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="spinBox">
+             <property name="maximum">
+              <number>256</number>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QSlider" name="horizontalSlider_4">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QSpinBox" name="spinBox_4">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLabel" name="label_2">
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSpinBox" name="spinBox_3">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label">
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="3">
+            <widget class="QSlider" name="horizontalSlider_3">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1" colspan="2">
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>确定</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3" colspan="2">
+            <widget class="QPushButton" name="pushButton_11">
+             <property name="text">
+              <string>取消</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <property name="styleSheet">
+           <string notr="true">background-color : rgb(240, 240, 240)
+</string>
+          </property>
+          <attribute name="title">
+           <string>自定义矩阵</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="6" column="2">
+            <widget class="QSpinBox" name="spinBox_7">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="2">
+            <widget class="QSpinBox" name="spinBox_22"/>
+           </item>
+           <item row="6" column="3">
+            <widget class="QSpinBox" name="spinBox_8">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QSpinBox" name="spinBox_18"/>
+           </item>
+           <item row="7" column="2">
+            <widget class="QSpinBox" name="spinBox_12"/>
+           </item>
+           <item row="10" column="4">
+            <widget class="QSpinBox" name="spinBox_29">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QSpinBox" name="spinBox_11"/>
+           </item>
+           <item row="6" column="1">
+            <widget class="QSpinBox" name="spinBox_6">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QSpinBox" name="spinBox_23"/>
+           </item>
+           <item row="7" column="0">
+            <widget class="QSpinBox" name="spinBox_10">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>50</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QRadioButton" name="radioButton_5">
+             <property name="text">
+              <string>5X5</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>σ</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QSpinBox" name="spinBox_5">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>50</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QSpinBox" name="spinBox_20">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="24" column="3">
+            <widget class="QPushButton" name="pushButton_17">
+             <property name="minimumSize">
+              <size>
+               <width>47</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>47</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>确定</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QSpinBox" name="spinBox_25">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="4">
+            <widget class="QSpinBox" name="spinBox_9">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QRadioButton" name="radioButton_4">
+             <property name="text">
+              <string>3X3</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="8" column="2">
+            <widget class="QSpinBox" name="spinBox_17"/>
+           </item>
+           <item row="10" column="3">
+            <widget class="QSpinBox" name="spinBox_28">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="4">
+            <widget class="QSpinBox" name="spinBox_19">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QSpinBox" name="spinBox_15">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QSpinBox" name="spinBox_21"/>
+           </item>
+           <item row="20" column="2">
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="10" column="1">
+            <widget class="QSpinBox" name="spinBox_26">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="4">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1" colspan="4">
+            <widget class="QSlider" name="horizontalSlider_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>60</number>
+             </property>
+             <property name="pageStep">
+              <number>1</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="2">
+            <widget class="QSpinBox" name="spinBox_27">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="2">
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>行</string>
+             </property>
+            </widget>
+           </item>
+           <item row="24" column="0" colspan="2">
+            <widget class="QPushButton" name="pushButton_16">
+             <property name="text">
+              <string>全图运算</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="1">
+            <widget class="QComboBox" name="comboBox">
+             <property name="minimumSize">
+              <size>
+               <width>52</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="currentText">
+              <string>2</string>
+             </property>
+             <property name="currentIndex">
+              <number>2</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="13" column="3">
+            <widget class="QComboBox" name="comboBox_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>52</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>52</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="currentText">
+              <string>2</string>
+             </property>
+             <property name="currentIndex">
+              <number>2</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QSpinBox" name="spinBox_16"/>
+           </item>
+           <item row="7" column="4">
+            <widget class="QSpinBox" name="spinBox_14">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="24" column="4">
+            <widget class="QPushButton" name="pushButton_18">
+             <property name="minimumSize">
+              <size>
+               <width>47</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>47</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>取消</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="4">
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>列</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>SE中心</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="3">
+            <widget class="QSpinBox" name="spinBox_13"/>
+           </item>
+           <item row="9" column="4">
+            <widget class="QSpinBox" name="spinBox_24">
+             <property name="value">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0" colspan="5">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="16" column="1" colspan="4">
+            <widget class="QSpinBox" name="spinBox_42"/>
+           </item>
+           <item row="18" column="3" colspan="2">
+            <widget class="QRadioButton" name="radioButton_12">
+             <property name="text">
+              <string>闭重构</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_2</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="18" column="0" colspan="2">
+            <widget class="QRadioButton" name="radioButton_11">
+             <property name="text">
+              <string>开重构</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_2</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="14" column="1" colspan="4">
+            <widget class="QSpinBox" name="spinBox_40">
+             <property name="maximum">
+              <number>200</number>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="1" colspan="4">
+            <widget class="QSpinBox" name="spinBox_43"/>
+           </item>
+           <item row="15" column="1" colspan="4">
+            <widget class="QSpinBox" name="spinBox_41"/>
+           </item>
+           <item row="15" column="0">
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>SE宽</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0">
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>SE长</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="0">
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>重构SE长</string>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="0">
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>重构SE宽</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="0" colspan="2">
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>分水岭步长</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="2" colspan="3">
+            <widget class="QSpinBox" name="spinBox_44">
+             <property name="maximum">
+              <number>200</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <property name="styleSheet">
+           <string notr="true">background-color : rgb(240, 240, 240)</string>
+          </property>
+          <attribute name="title">
+           <string>边缘检测</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="14" column="0">
+            <widget class="QSpinBox" name="spinBox_39">
+             <property name="maximum">
+              <number>999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QSpinBox" name="spinBox_31">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="21" column="0">
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>307</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>σ</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>low</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QSlider" name="horizontalSlider_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>6</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QSpinBox" name="spinBox_36">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>最小投票数</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0">
+            <widget class="QSpinBox" name="spinBox_37">
+             <property name="maximum">
+              <number>999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>high</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QSpinBox" name="spinBox_30">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="13" column="0">
+            <widget class="QSpinBox" name="spinBox_38">
+             <property name="maximum">
+              <number>999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="1">
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>最大半径</string>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="1">
+            <widget class="QPushButton" name="pushButton_22">
+             <property name="text">
+              <string>确定</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="1">
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>最小半径</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="1">
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>最小距离</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="0">
+            <widget class="QRadioButton" name="radioButton_8">
+             <property name="text">
+              <string>Canny</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="0">
+            <widget class="QRadioButton" name="radioButton_10">
+             <property name="text">
+              <string>Sobel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QWidget" name="canvas" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1599</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menufile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave"/>
+   <addaction name="separator"/>
+   <addaction name="actionmove"/>
+   <addaction name="actionrotate"/>
+   <addaction name="actioncut"/>
+   <addaction name="actionresize"/>
+   <addaction name="separator"/>
+   <addaction name="actionadd"/>
+   <addaction name="actionminus"/>
+   <addaction name="actionmult"/>
+   <addaction name="separator"/>
+   <addaction name="actionconfirmCut"/>
+   <addaction name="actioncancleCut"/>
+  </widget>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/open.png</normaloff>:/QtGuiApplication1/Resources/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open...</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionmove">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/move.png</normaloff>:/QtGuiApplication1/Resources/move.png</iconset>
+   </property>
+   <property name="text">
+    <string>move</string>
+   </property>
+  </action>
+  <action name="actionadd">
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/add.png</normaloff>:/QtGuiApplication1/Resources/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>add</string>
+   </property>
+  </action>
+  <action name="actionminus">
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/minus.png</normaloff>:/QtGuiApplication1/Resources/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>minus</string>
+   </property>
+  </action>
+  <action name="actionmult">
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/mult.png</normaloff>:/QtGuiApplication1/Resources/mult.png</iconset>
+   </property>
+   <property name="text">
+    <string>mult</string>
+   </property>
+  </action>
+  <action name="actioncut">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/cut.png</normaloff>:/QtGuiApplication1/Resources/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>cut</string>
+   </property>
+  </action>
+  <action name="actionconfirmCut">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/confirm.png</normaloff>:/QtGuiApplication1/Resources/confirm.png</iconset>
+   </property>
+   <property name="text">
+    <string>confirmCut</string>
+   </property>
+  </action>
+  <action name="actioncancleCut">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/cancle.png</normaloff>:/QtGuiApplication1/Resources/cancle.png</iconset>
+   </property>
+   <property name="text">
+    <string>cancleCut</string>
+   </property>
+  </action>
+  <action name="actionrotate">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/rotate.png</normaloff>:/QtGuiApplication1/Resources/rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>rotate</string>
+   </property>
+  </action>
+  <action name="actionresize">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/resize.png</normaloff>:/QtGuiApplication1/Resources/resize.png</iconset>
+   </property>
+   <property name="text">
+    <string>resize</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="QtGuiApplication1.qrc">
+     <normaloff>:/QtGuiApplication1/Resources/save.png</normaloff>:/QtGuiApplication1/Resources/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtGuiApplication1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionopen</sender>
+   <signal>triggered()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>BroseAndOpenImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>351</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ConvertRGBToGray()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1530</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1363</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1363</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>451</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1407</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1532</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1532</x>
+     <y>479</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1407</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ModifyRGBChannel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1432</x>
+     <y>768</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>363</x>
+     <y>415</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_R</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ModifyRChannel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1433</x>
+     <y>790</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>442</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_G</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ModifyGChannel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1433</x>
+     <y>812</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>478</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_B</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ModifyBChannel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1435</x>
+     <y>834</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>337</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>OtusThreshold()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionmove</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeMoveMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionadd</sender>
+   <signal>triggered()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>OpenAddWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionminus</sender>
+   <signal>triggered()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>OpenMinusWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionmult</sender>
+   <signal>triggered()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>OpenMultWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actioncut</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeCutMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionconfirmCut</sender>
+   <signal>triggered()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ConfirmCut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actioncancleCut</sender>
+   <signal>triggered()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>CancleCut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionrotate</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeRotateMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionresize</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeResizeMode(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeHistMode1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeHistMode2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>166</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1530</x>
+     <y>661</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1451</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1451</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>661</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_4</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1530</x>
+     <y>689</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1495</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_4</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1495</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>689</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolBox</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeListMode(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>HistogramInput(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1530</x>
+     <y>689</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>HistogramInput(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1530</x>
+     <y>661</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>HistogramInput(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1532</x>
+     <y>479</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>HistogramInput(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1530</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeEnhanceLinear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ConfirmHist()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1400</x>
+     <y>718</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>431</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>CancleHist()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1488</x>
+     <y>718</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>491</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeEnhanceSection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeEnhanceLog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>HistEqual()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>392</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_19</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_9</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_14</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_24</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_29</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_28</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1522</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_8</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1522</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_7</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1466</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_6</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1422</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_5</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1319</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_10</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1319</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_15</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1319</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_20</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1319</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_25</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1319</x>
+     <y>271</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_26</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1422</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_27</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1522</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1466</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeFilterAverage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>75</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeFilterMedian()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeFilterGauss()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_15</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeFilterPersonal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>81</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_16</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>DrawFilter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1319</x>
+     <y>696</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_5</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_4</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1375</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>CancleFilter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1530</x>
+     <y>696</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1422</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_17</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ConfirmFilter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1519</x>
+     <y>718</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1120</x>
+     <y>379</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeEdgeSobel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeEdgeLaplace()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>93</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_21</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeEdgeCanny()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_6</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_6</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1342</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1502</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_22</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>DrawEdge()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1532</x>
+     <y>404</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1121</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeEnhanceExp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_9</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>label_12</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1367</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1572</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_8</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>label_13</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1533</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1572</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_9</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ModifyHSV()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1319</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1119</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_8</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ModifyHSV()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1319</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1118</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_7</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ModifyHSV()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1319</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1121</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_7</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>label_14</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1533</x>
+     <y>463</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1572</x>
+     <y>376</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeLevelR()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1350</x>
+     <y>485</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1123</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeLevelG()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1439</x>
+     <y>485</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1128</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeLevelB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1521</x>
+     <y>485</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1126</x>
+     <y>365</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_23</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>DrawLevel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1319</x>
+     <y>701</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1125</x>
+     <y>562</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_24</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ConfirmLevel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1401</x>
+     <y>701</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1125</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_25</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>CancleLevel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1490</x>
+     <y>700</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1128</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_26</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeHoughLine()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_27</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeHoughCircle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_28</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMDilation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>81</x>
+     <y>209</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_29</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMErosion()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>59</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_32</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMOpen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>257</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_33</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMClose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>75</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_31</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMRefined()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>305</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_30</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMRough()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>446</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_34</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMDistance()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>75</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>415</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_35</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMSkeleton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>476</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_36</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMS_Reconst()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>442</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_37</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeBMM_Reconst()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_42</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeGMWatershed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>318</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-6</x>
+     <y>546</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_43</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeGMReconst()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>11</x>
+     <y>346</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>572</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_38</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeGMDilation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-36</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_39</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeGMErosion()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-92</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_40</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeGMOpen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-24</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_41</sender>
+   <signal>clicked()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>ChangeGMClose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-75</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionsave</sender>
+   <signal>triggered()</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>SaveImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>799</x>
+     <y>447</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>signal1()</signal>
+  <slot>BroseAndOpenImage()</slot>
+  <slot>SetPenStatus(bool)</slot>
+  <slot>ConvertRGBToGray()</slot>
+  <slot>DrawHistogram()</slot>
+  <slot>Binaryzation(int)</slot>
+  <slot>DrawHistogram2()</slot>
+  <slot>ChangeHistMode1()</slot>
+  <slot>ModifyRChannel()</slot>
+  <slot>ModifyGChannel()</slot>
+  <slot>ModifyBChannel()</slot>
+  <slot>ModifyRGBChannel()</slot>
+  <slot>OtusThreshold()</slot>
+  <slot>ChangeMoveMode(bool)</slot>
+  <slot>OpenAddWindow()</slot>
+  <slot>OpenMinusWindow()</slot>
+  <slot>OpenMultWindow()</slot>
+  <slot>ChangeCutMode(bool)</slot>
+  <slot>ConfirmCut()</slot>
+  <slot>CancleCut()</slot>
+  <slot>ChangeRotateMode(bool)</slot>
+  <slot>ChangeResizeMode(bool)</slot>
+  <slot>ChangeHistMode2()</slot>
+  <slot>ChangeListMode(int)</slot>
+  <slot>HistogramInput(int)</slot>
+  <slot>ChangeEnhanceLinear()</slot>
+  <slot>ConfirmHist()</slot>
+  <slot>CancleHist()</slot>
+  <slot>ChangeEnhanceSection()</slot>
+  <slot>ChangeEnhanceLog()</slot>
+  <slot>HistEqual()</slot>
+  <slot>ChangeFilterAverage()</slot>
+  <slot>ChangeFilterMedian()</slot>
+  <slot>ChangeFilterGauss()</slot>
+  <slot>ChangeFilterPersonal()</slot>
+  <slot>DrawFilter()</slot>
+  <slot>CancleFilter()</slot>
+  <slot>ConfirmFilter()</slot>
+  <slot>ChangeEdgeSobel()</slot>
+  <slot>ChangeEdgeLaplace()</slot>
+  <slot>ChangeEdgeCanny()</slot>
+  <slot>DrawEdge()</slot>
+  <slot>ChangeEnhanceExp()</slot>
+  <slot>ModifyHSV()</slot>
+  <slot>ChangeLevelR()</slot>
+  <slot>ChangeLevelG()</slot>
+  <slot>ChangeLevelB()</slot>
+  <slot>DrawLevel()</slot>
+  <slot>ConfirmLevel()</slot>
+  <slot>CancleLevel()</slot>
+  <slot>ChangeHoughLine()</slot>
+  <slot>ChangeHoughCircle()</slot>
+  <slot>ChangeBMDilation()</slot>
+  <slot>ChangeBMErosion()</slot>
+  <slot>ChangeBMOpen()</slot>
+  <slot>ChangeBMClose()</slot>
+  <slot>ChangeBMDistance()</slot>
+  <slot>ChangeBMSkeleton()</slot>
+  <slot>ChangeBMRough()</slot>
+  <slot>ChangeBMRefined()</slot>
+  <slot>ChangeBMS_Reconst()</slot>
+  <slot>ChangeBMM_Reconst()</slot>
+  <slot>ChangeGMOpen()</slot>
+  <slot>ChangeGMClose()</slot>
+  <slot>ChangeGMDilation()</slot>
+  <slot>ChangeGMErosion()</slot>
+  <slot>ChangeGMReconst()</slot>
+  <slot>ChangeGMWatershed()</slot>
+  <slot>SaveImage()</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>
