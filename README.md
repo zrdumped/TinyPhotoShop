@@ -1,4 +1,4 @@
-# TinePhotoShop
+# TinyPhotoShop
 * A computer vision class project from SJTU SE.
 * Implement all the image processing functions by myself (and some codes on website) instead of invoking the functions from library. 
   (OpenCV is just used as loading and saving images & some basic image processing support)
